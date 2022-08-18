@@ -1,0 +1,32 @@
+﻿@model StudentMVC.Models.Students
+
+@{
+    ViewData["Title"] = "GetStudentByID";
+}
+
+<h1>Details</h1>
+
+<div>
+<table id="student" class="table tab-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Studnet ID</th>
+            <th>Studnet Name</th>
+            <th>Studnet Age</th>
+            <th>Studnet Email</th>
+        </tr>
+   
+    </thead>
+    <tbody>
+
+        <tr>
+            <th>@Model.Id</th>
+            <th>@Model.Name</th>
+            <th>@Model.Age</th>
+            <th>@Model.Email</th>
+
+        </tr>
+    </tbody>
+    </table>
+    <a asp-action="GetStudents">Back to List</a>
+</div>
